@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "NoiseBomb",
+    "slug": "noisebomb",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "noisebomb",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#08080d"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.noisebomb.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "O NoiseBomb usa o microfone para gravar seus próprios sons."
+      }
+    },
+    "android": {
+      "package": "com.noisebomb.app",
+      "versionCode": 1,
+      "permissions": [
+        "RECORD_AUDIO",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "MODIFY_AUDIO_SETTINGS",
+        "WAKE_LOCK",
+        "com.android.vending.BILLING",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#08080d"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-localization",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "O NoiseBomb usa o microfone para gravar seus próprios sons."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5288b0b9-d519-49c8-9c3a-55824f41475d"
+      }
+    },
+    "owner": "rafasousilva"
+  }
+}
